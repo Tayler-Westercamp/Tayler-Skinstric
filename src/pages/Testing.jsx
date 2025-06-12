@@ -79,7 +79,7 @@ const Testing = () => {
       <div className="absolute left-[32px] top-[86px]">
         <p className="roobert-font font-bold">TO START ANALYSIS</p>
       </div>
-      <div className="relative h-[762px] w-[762px] flex items-center justify-center">
+      <div className="relative h-[762px] w-[762px] flex items-center justify-center scale-75 sm:scale-90 md:scale-100">
         <div id="square1" className="w-[425px] h-[425px] border-2 border-dotted border-bluegray absolute rotate-45 z-0 top-[calc(50%+24px)] left-1/2 -translate-x-1/2 -translate-y-1/2 "></div>
         <div id="square2" className="w-[482px] h-[482px] border-2 border-dotted border-bluegray-60 absolute rotate-45 z-0 top-[calc(50%+24px)] left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
         <div id="square3" className="w-[538px] h-[538px] border-2 border-dotted border-bluegray-40 absolute rotate-45 z-0 top-[calc(50%+24px)] left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
@@ -104,7 +104,7 @@ const Testing = () => {
             </div>
           </div>
         ) : (
-          <div className="flex justify-center items-center flex-col">
+          <div className="flex justify-center items-center flex-col scale-75 sm:scale-90 md:scale-100">
             <p className="font-roobert text-eerie-40 text[14px] h-[24px]">
               CLICK TO TYPE
             </p>

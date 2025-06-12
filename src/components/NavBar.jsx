@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
+  const location = useLocation();
   return (
     <header>
       <div className="flex justify-between py-[16px] px-[32px]">
@@ -11,9 +12,14 @@ const NavBar = () => {
           >
             SKINSTRIC
           </Link>
-          <div className="flex items-center justify-between w-[61px] h-[17px]">
+          <div className="flex items-center justify-between min-w-[61px] h-[17px]">
             <div className="border-y border-l w-[4px] h-[17px] rounded-tl-sm rounded-bl-sm border-eerie-60"></div>
-            <p className="font-roobert text-[14px] font-bold text-eerie-60">INTRO</p>
+            {location.pathname === "/select" || location.pathname === "/summary" ? (
+              <p className="font-roobert text-[14px] font-bold text-eerie-60 mx-1">ANALYSIS</p>
+            ) : (
+              <p className="font-roobert text-[14px] font-bold text-eerie-60 ">INTRO</p>
+            )}
+            
             <div className="border-y border-r w-[4px] h-[17px] rounded-tr-sm rounded-br-sm border-eerie-60"></div>
           </div>
         </div>
